@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="foo()" style="background-color: aqua;color: rgb(0, 0, 0); border-radius: 5px ;">click me</button>
+    <p id="test">Hello</p>
+
+    <script>
+        function foo(){
+            var par = document.getElementById("test");
+            if (par.innerHTML === "Hello"){
+                par.innerHTML = "Goodbye";
+            } else {
+                par.innerHTML = "Hello"
+            }
+            
+        }
+    </script>
+</body>
+</html>
